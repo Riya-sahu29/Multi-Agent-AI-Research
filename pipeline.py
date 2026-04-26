@@ -7,7 +7,7 @@ def run_research_pipeline(topic: str) -> dict:
 
     print("\n" + "=" * 50)
     print("Step 1 - Search agent is working...")
-    print("=" * 50)
+    print("=" * 50)    
 
     search_agent = build_search_agent()
 
