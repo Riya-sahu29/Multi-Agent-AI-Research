@@ -6,9 +6,9 @@ st.set_page_config(
     page_icon="🔬",
     layout="wide",
     initial_sidebar_state="collapsed",
-)
+)    
    
-st.markdown("""
+st.markdown("""  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap');
 
