@@ -73,5 +73,5 @@ critic_prompt = ChatPromptTemplate.from_messages([
     ..."""),        
 ])
 
-critic_chain = critic_prompt | llm | StrOutputParser()
+critic_chain = critic_prompt | llm | StrOutputParser()   
 
