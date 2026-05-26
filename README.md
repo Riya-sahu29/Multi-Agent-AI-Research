@@ -1,94 +1,173 @@
-# 🤖 Multi-Agent AI Research System
+# 🤖 Agentic AI Research Platform
 
-A powerful **Multi-Agent AI Research Assistant** built using **LangChain, LangGraph, Groq LLM, and Streamlit**.
-This system automates the entire research workflow — from searching information to generating structured reports and critical evaluation.
+> Autonomous multi-agent AI research system powered by LangGraph, Groq LLM, and Tavily Search API.
+> This system automates the entire research workflow — from searching information to generating structured reports and critical evaluation.
 
----
+<p align="center">
+  <img src="screenshots/home.png" width="100%">
+</p>
 
-## 🚀 Features
-
-* 🔍 **Search Agent**
-  Finds relevant and recent information from the web using Tavily API
-
-* 📄 **Reader Agent**
-  Scrapes and extracts clean content from selected URLs
-
-* ✍️ **Writer Agent**
-  Generates a structured research report:
-
-  * Introduction
-  * Key Findings
-  * Conclusion
-  * Sources
-
-* 🧠 **Critic Agent**
-  Evaluates the report and provides:
-
-  * Score (out of 10)
-  * Strengths
-  * Areas for Improvement
-  * Final Verdict
-
-* 🎨 **Streamlit UI**
-  Interactive frontend to input topics and view results step-by-step
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LangGraph-Agentic_AI-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/LangChain-LLM_Orchestration-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Streamlit-Frontend-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Groq-LLM-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tavily-Web_Search-purple?style=for-the-badge">
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+# 🚀 Overview
 
-* Python
-* Streamlit
-* LangChain
-* LangGraph
-* Groq API (LLM)
-* Tavily API (Search)
-* BeautifulSoup (Web Scraping)
+Agentic AI Research Platform is a powerful multi-agent AI system that automates the complete research workflow using autonomous AI agents.
+
+The platform can:
+
+- Search real-time information from the web
+- Extract and process content
+- Generate structured research reports
+- Critically evaluate generated reports
+- Coordinate workflows between multiple AI agents
 
 ---
 
-## 📁 Project Structure
+# ⚡ Core Features
 
+## 🔍 Search Agent
+
+Uses Tavily API to retrieve recent and relevant information from the web.
+
+---
+
+## 📄 Reader Agent
+
+Scrapes and extracts useful content from URLs using BeautifulSoup.
+
+---
+
+## ✍️ Writer Agent
+
+Generates structured AI-powered research reports including:
+
+- Introduction
+- Key Findings
+- Technical Analysis
+- Conclusion
+- References
+
+---
+
+## 🧠 Critic Agent
+
+Evaluates report quality and provides:
+
+- Score out of 10
+- Strengths
+- Weaknesses
+- Suggestions
+- Final Verdict
+
+---
+
+# 🖥️ Application Screenshots
+
+## 🏠 Home Page
+
+<p align="center">
+  <img src="screenshots/home.png" width="90%">
+</p>
+
+---
+
+## 📊 Generated Research Report
+
+<p align="center">
+  <img src="screenshots/report.png" width="90%">
+</p>
+
+---
+
+## 🧠 Critic Agent Evaluation
+
+<p align="center">
+  <img src="screenshots/critic.png" width="90%">
+</p>
+
+---
+
+# 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- LangChain
+- LangGraph
+- Groq API
+- Tavily API
+- BeautifulSoup
+- dotenv
+
+---
+
+# 📂 Project Structure
+
+```text
+AGENTIC-AI-RESEARCH-PLATFORM/
+│
+├── app.py
+├── agents.py
+├── tools.py
+├── pipeline.py
+├── requirements.txt
+├── README.md
+├── .env
+├── .gitignore
+│
+└── screenshots/
+    ├── home.png
+    ├── report.png
+    └── critic.png
 ```
-MULTI AGENT SYSTEM/
-│── app.py               # Streamlit UI
-│── agents.py            # Agents (Search, Reader, Writer, Critic)
-│── tools.py             # Web search & scraping tools
-│── pipeline.py          # Workflow logic
-│── requirements.txt     # Dependencies
-│── .env                 # API keys (not pushed)
-│── .gitignore           # Ignore unnecessary files
-```
 
 ---
 
-## ⚙️ Setup Instructions
+# ⚙️ Installation
 
-### 1️⃣ Clone Repository
+## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/multi-agent-ai.git
-cd multi-agent-ai
+git clone https://github.com/YOUR_USERNAME/agentic-ai-research-platform.git
+
+cd agentic-ai-research-platform
 ```
 
 ---
 
-### 2️⃣ Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate:
+---
 
-**Windows**
+## 3️⃣ Activate Environment
+
+### Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
+### Linux / Mac
+
+```bash
+source .venv/bin/activate
+```
+
 ---
 
-### 3️⃣ Install Dependencies
+## 4️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -96,18 +175,19 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Setup Environment Variables
+## 5️⃣ Setup Environment Variables
 
-Create a `.env` file and add:
+Create a `.env` file:
 
-```
+```env
 GROQ_API_KEY=your_groq_api_key
+
 TAVILY_API_KEY=your_tavily_api_key
 ```
 
 ---
 
-### 5️⃣ Run the App
+# ▶️ Run Application
 
 ```bash
 streamlit run app.py
@@ -115,90 +195,82 @@ streamlit run app.py
 
 ---
 
-## 🌐 Deployment (Streamlit Cloud)
+# ☁️ Deployment
 
-### Steps:
+## Deploy on Streamlit Cloud
 
-1. Push code to GitHub
-2. Go to: https://share.streamlit.io
-3. Click **New App**
-4. Select your repo
+1. Push project to GitHub
+2. Open Streamlit Cloud
+3. Create New App
+4. Select repository
 5. Choose:
 
-   ```
-   app.py
-   ```
+```text
+app.py
+```
+
 6. Add secrets:
 
-   ```
-   GROQ_API_KEY=xxxx
-   TAVILY_API_KEY=xxxx
-   ```
+```env
+GROQ_API_KEY=xxxx
+
+TAVILY_API_KEY=xxxx
+```
+
 7. Deploy 🚀
 
 ---
 
-## ⚠️ Known Issues & Fixes
+# 📈 Technical Highlights
 
-### ❌ Rate Limit Error (Groq)
-
-* Cause: Free tier token limit exceeded
-* Fix:
-
-  * Wait for reset
-  * Use smaller model:
-
-    ```
-    llama-3.1-8b-instant
-    ```
+- Multi-Agent AI Workflow
+- LangGraph Orchestration
+- Real-Time Web Search
+- AI-Powered Report Generation
+- Autonomous AI Evaluation
+- Modular Agent Architecture
+- Prompt Engineering
+- LLM Tool Calling
 
 ---
 
-### ❌ Connection Error (Tavily / Requests)
+# 💡 Example Research Topics
 
-* Cause: Network timeout or API issue
-* Fix:
-
-  * Add try/except in tools.py
-  * Retry request
-  * Check internet connection
-
----
-
-### ❌ Tool Call Error
-
-* Cause: Model calling wrong tool (e.g., brave_search)
-* Fix:
-
-  * Restrict tools explicitly in agents
+- Future of Multi-Agent AI Systems
+- AI in Software Engineering
+- Latest Quantum Computing Research
+- AI Agents in Healthcare
+- Generative AI Trends
 
 ---
 
-## 💡 Example Topics to Try
+# 🔮 Future Improvements
 
-* "Latest advancements in quantum computing 2025"
-* "Impact of generative AI on software development"
-* "Recent IPL 2026 match analysis"
-* "Future of multi-agent AI systems"
-
----
-
-## 📌 Future Improvements
-
-* Add memory to agents
-* Improve UI with charts
-* Add multi-source validation
-* Use vector database for better retrieval
+- Agent memory
+- Vector database integration
+- Multi-source validation
+- Async workflows
+- PDF export support
+- Advanced analytics dashboard
 
 ---
 
-## 👨‍💻 Author
+# 👩‍💻 Author
 
-**Riya Priyadarsani Sahu**
+## Riya Priyadarsani Sahu
+
+Backend & AI Engineer
+
+Focused on:
+
+- FastAPI
+- LangGraph
+- Multi-Agent AI Systems
+- LLM Engineering
+- AI Automation
 
 ---
 
-## ⭐ If you like this project
+# ⭐ Support
 
-Give it a ⭐ on GitHub!
-
+If you like this project, give it a ⭐ on GitHub.
