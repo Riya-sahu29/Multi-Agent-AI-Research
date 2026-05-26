@@ -7,14 +7,14 @@ def run_research_pipeline(topic: str) -> dict:
 
     print("\n" + "=" * 50)
     print("Step 1 - Search agent is working...")
-    print("=" * 50)
+    print("=" * 50)    
 
     search_agent = build_search_agent()
 
     search_result = search_agent.invoke({
         "messages": [
             ("user", f""" Use the web_search tool first.
-             Search for recent reliable sources about: {topic}
+             Search for recent reliable sources about: {topic}    
 Return the tool output exactly in this format:
 
 Title:
@@ -90,5 +90,5 @@ Do not summarize.
     return state
 
 if __name__ == "__main__":
-    topic = input("\n Enter a research topic :")
+    topic = input("\n Enter a research topic :")   
     run_research_pipeline(topic)

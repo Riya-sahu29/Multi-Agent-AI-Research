@@ -27,7 +27,7 @@ def build_search_agent():
 def build_reader_agent():
     return create_agent(
         model = llm,
-        tools = [web_search, scrape_url]
+        tools = [web_search, scrape_url]      
     )
 
 # writer chain 
@@ -70,8 +70,8 @@ critic_prompt = ChatPromptTemplate.from_messages([
     - ...
     
     One line verdict:
-    ..."""),
+    ..."""),        
 ])
 
-critic_chain = critic_prompt | llm | StrOutputParser()
+critic_chain = critic_prompt | llm | StrOutputParser()   
 
