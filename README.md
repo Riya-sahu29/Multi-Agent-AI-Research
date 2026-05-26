@@ -1,11 +1,9 @@
 # 🤖 Agentic AI Research Platform
 
-> Autonomous multi-agent AI research system powered by LangGraph, Groq LLM, and Tavily Search API.
-> This system automates the entire research workflow — from searching information to generating structured reports and critical evaluation.
+ Autonomous multi-agent AI research system powered by LangGraph, Groq LLM, and Tavily Search API.
+ This system automates the entire research workflow — from searching information to generating structured reports and critical evaluation.
 
-# 🌐 Live Demo
 
-[Open Live Application](https://multi-agent-ai-riya-app.streamlit.app/)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge">
