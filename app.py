@@ -5,7 +5,7 @@ st.set_page_config(
     page_title="ResearchMind",
     page_icon="🔬",
     layout="wide",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="collapsed",  
 )    
    
 st.markdown("""  
@@ -18,7 +18,7 @@ html, body, [class*="css"] {
     font-family: 'Barlow', sans-serif;
 }
 .main .block-container { padding: 2rem 3.5rem 2rem; max-width: 1300px; }
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer, header { visibility: hidden; }  
 
 .top-badge {
     text-align: center;
