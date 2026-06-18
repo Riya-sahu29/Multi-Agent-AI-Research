@@ -12,7 +12,7 @@ load_dotenv()
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
     temperature=0,
-    max_retries=3,
+    max_retries=3,  
     timeout=60
 )
 
@@ -41,7 +41,7 @@ writer_prompt = ChatPromptTemplate.from_messages([
 
      Structure the report as:
      - Introduction
-     - Key Finding (minimum 3 well-explained points)
+     - Key Finding (minimum 3 well-explained points)   
      - Conclusion
      - Source (list all URLs found in the research)
 
@@ -65,7 +65,7 @@ critic_prompt = ChatPromptTemplate.from_messages([
     Strengths:
     - ...
     - ...
-    Areas to Improve:
+    Areas to Improve:  
     - ...
     - ...
     
